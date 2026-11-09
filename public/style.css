@@ -1,0 +1,76 @@
+/* Variáveis de cores para facilitar o uso */
+:root {
+    --rosa-claro: #ffe5ec;
+    --rosa-suave: #ffc2d1;
+    --lilas-claro: #f3e8ff;
+    --lilas-suave: #e9d5ff;
+    --lilas-destaque: #d8b4fe;
+    --texto-escuro: #4a3e56;
+  }
+  
+  /* Estilo geral da página */
+  body {
+    background-color: var(--lilas-claro);
+    color: var(--texto-escuro);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  /* Exemplo de cartão / container delicado */
+  .card {
+    background-color: #ffffff;
+    border: 1px solid var(--rosa-suave);
+    border-radius: 16px;
+    padding: 24px;
+    max-width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 4px 15px rgba(233, 213, 255, 0.4);
+  }
+  
+  /* Títulos */
+  h1, h2 {
+    color: #7e428c;
+    text-align: center;
+  }
+  
+  /* Botão com gradiente rosa e lilás */
+  .botao {
+    background: linear-gradient(135deg, var(--rosa-suave), var(--lilas-destaque));
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.3s ease;
+  }
+  
+  /* Efeito ao passar o mouse no botão */
+  .botao:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(216, 180, 254, 0.5);
+  }
+  
+  /* Estilo delicado para os campos do formulário */
+  input[type="text"],
+  input[type="number"] {
+    width: 100%;
+    padding: 10px 14px;
+    margin-bottom: 12px;
+    border: 1px solid var(--lilas-suave);
+    border-radius: 10px;
+    background-color: var(--rosa-claro);
+    color: var(--texto-escuro);
+    outline: none;
+    box-sizing: border-box;
+  }
+  
+  input[type="text"]:focus,
+  input[type="number"]:focus {
+    border-color: var(--lilas-destaque);
+    box-shadow: 0 0 5px rgba(216, 180, 254, 0.6);
+  }
